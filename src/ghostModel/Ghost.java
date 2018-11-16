@@ -7,32 +7,26 @@ public class Ghost
 	private int numberOfFangs;
 	private int spectralMass;
 	
-	//Default Constructor
 	public Ghost()
 	{
 		this.name = "Boo";
 		this.color = "White";
 		this.numberOfFangs = 8;
+		this.spectralMass = 50;
+		
 	}
 
-	public Ghost(String name, String color, int numberOfFangs)
+	public Ghost(String name, String color, int numberOfFangs, int spectralMass)
 	{
 		this.name = name;
 		this.color = color;
 		this.numberOfFangs = numberOfFangs;
-	}
-	
-	public Ghost(String name, int spectralMass, String color)
-	{
-		this.name = name;
 		this.spectralMass = spectralMass;
-		this.color = color;
-		
 	}
 	
 	public String toString()
 	{
-		String vault = "["+name+"]";
+		String vault = "this Ghost's name is " + name + ", it's color is " + color + ", it has " + numberOfFangs + " fangs, and it's spectral mass is " + spectralMass + " SU.";
 		
 		return vault;
 	}
